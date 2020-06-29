@@ -11,10 +11,7 @@ get:
       in: query
       required: false
       schema:
-        type: string
-        enum:
-          - Active
-          - Revoked
+        $ref: '../components/schemas/ApiKeyStatus.yaml'
   responses:
     '200':
       description: Ключи найдены
